@@ -1291,26 +1291,7 @@ Axel II:
   - Twilight Thorn
   blacklist_destination:
   - Jafar
-  - Grim Reaper I
-  - Thresholder
-  - Luxord
-  - Sark
-  - Prison Keeper
-  - Vexen
-  - Xemnas
-  - Armor Xemnas II
-  - Barbossa
-  - Cerberus
-  - Twilight Thorn
-  - Hayner
-  - Vivi
-  - Axel I
-  - Setzer
   - Cloud
-  - Blizzard Lord 
-  - Volcano Lord
-  - Armor Xemnas I
-  - Scar
   blacklist_source:
   - Demyx OC
   - Final Xemnas
@@ -1518,8 +1499,6 @@ Blizzard Lord:
   - Sephiroth # Too hard in multi boss fights
   - Terra # Too hard in multi boss fights
   - Twilight Thorn
-  - Roxas # crashes a lot
-  - Larxene
   - Marluxia
   - Axel II
   - Xigbar
@@ -1533,6 +1512,7 @@ Blizzard Lord:
   - Shadow Stalker
   - Hydra
   - Storm Rider
+  - Final Xemnas
   tags:
   - large
   type: boss
@@ -1548,6 +1528,7 @@ Blizzard Lord:
       - 0
       - 0
     Blizzard Lord (Cups):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -1629,7 +1610,7 @@ Cerberus:
   level: 99
   limiter: 0
   model: B_HE020
-  msn_replace_allowed: false
+  msn_replace_allowed: true
   obj_id: 351
   size: 3.2
   type: boss
@@ -1659,7 +1640,7 @@ Cerberus:
         bossZ: -150
       # tags:
       # - cups
-      enabled: true
+      enabled: false
       program: 196
       # TODO This was working so maybe commenting the msn_list broke something but cups haven't had too much testing
       msn: HE_COL_2_10
@@ -1673,7 +1654,7 @@ Cerberus:
       # - program: 190
       #   msn: HE_COL_2_10
       #   room_size: 6.19
-      msn_replace_allowed: false
+      # msn_replace_allowed: false
       vars:
       - 1
       - 0
@@ -1702,6 +1683,7 @@ Cloud:
   - Hercules
   blacklist_source:
   - Zexion
+  - Marluxia
   - Twilight Thorn
   - Larxene
   - Jafar
@@ -1715,6 +1697,10 @@ Cloud:
   - Yuffie
   - Hercules
   - Roxas
+  - Sephiroth
+  - Xemnas (Data)
+  - Xaldin
+  - The Experiment
   limiter: 0
   model: N_HB550_BTL2
   pc: 
@@ -1741,6 +1727,7 @@ Cloud:
       - 1
       - 0
     Cloud (1):
+      enabled: false
       roomData:
         bossX: 300
         bossY: -21450
@@ -1753,6 +1740,7 @@ Cloud:
       - 2
       - 0
     Cloud (2):
+      enabled: false
       roomData:
         bossX: 300
         bossY: -21450
@@ -2440,6 +2428,7 @@ Final Xemnas:
   - Marluxia
   - Xigbar
   - Final Xemnas
+  - Sephiroth
   aimods: 
   - name: B_EX170_LAST/b_ex.bdscript
     type: obj
@@ -2897,6 +2886,7 @@ Hades II:
         bossY: -0.0001509865978732705
         bossZ: -450
       program: 196
+      enabled: true
       msn: HE_COL_8_50
       room_size: 9.14
       vars:
@@ -3004,12 +2994,12 @@ Hercules:
   can_be_enemy: true
   enabled: true
   enmp_index: 0xB2
-  msn_dest_as: "WI03_MS104"
+  # msn_dest_as: "WI03_MS104"
   hp: 100
   level: 99
   limiter: 17
   model: N_HE010_BTL_CLSM
-  msn_replace_allowed: false
+  msn_replace_allowed: true
   obj_id: 2320
   size: 2.48
   type: boss
@@ -3037,21 +3027,21 @@ Hercules:
   - Leon
   - Tifa
   - Yuffie
-  - Hercules
+  - Lexaeus
   tags:
   - cant_invuln
   variations:
     Hercules:
+      story_level: 16
       roomData:
         bossX: 0
         bossY: 0
         bossZ: 0
       enabled: true
-      msn_list:
-      - program: 171
-        msn: HE18_MS108
-        room_size: 12.22
-      vars:
+      program: 171
+    msn: HE18_MS108
+    room_size: 12.22
+    vars:
       - 1
       - 0
 Hook Bat:
@@ -3354,6 +3344,7 @@ Jafar:
   blacklist_source:
   - Zexion
   - Twilight Thorn
+  - The Experiment
   blacklist_destination:
   - Hades II
   - Final Xemnas
@@ -3460,6 +3451,9 @@ Larxene:
   - Barbossa
   - Scar
   - Riku
+  - Cerberus
+  - Luxord
+  - Armored Xemnas I
   - Thresholder # Can not reappear after a teleport
   can_be_enemy: false #expensive
   enabled: true
@@ -3557,6 +3551,7 @@ Leon:
       - 1
       - 0
     Leon (1):
+      enabled: false
       story_level: 37
       roomData:
         bossX: 589.9752197265625
@@ -3571,6 +3566,7 @@ Leon:
       - 0
     Leon (2):
       story_level: 37
+      enabled: false
       roomData:
         bossX: 589.9752197265625
         bossY: -1.9969710111618042
@@ -3584,6 +3580,7 @@ Leon:
       - 0
     Leon (3):
       story_level: 37
+      enabled: false
       roomData:
         bossX: 589.9752197265625
         bossY: -1.9969710111618042
@@ -3744,6 +3741,8 @@ Luxord:
   - Grim Reaper II
   - Leon
   - Cloud
+  - Pete OC II
+  - Pete TR
   tags:
   - organization
   - solo
@@ -3841,6 +3840,7 @@ Marluxia:
   - Jafar
   - Final Xemnas
   - Cloud
+  - Xaldin
   enabled: true
   enmp_index: 0xD7
   hp: 100
@@ -4124,15 +4124,15 @@ Pete OC II:
     bossX: 0
     bossY: 0
     bossZ: -400
-  enabled: true
+  enabled: false
   enmp_index: 0x1A
   hp: 100
   level: 99
   limiter: 20
   model: N_EX760_BTL_HERCULES
   msn: HE08_MS107
-  #replace_as: Pete Cups # Causes crash when Pete does a finger gun to the sky (directing nonexistent enemies?)
-  msn_replace_allowed: false
+  replace_as: Pete Cups # Causes crash when Pete does a finger gun to the sky (directing nonexistent enemies?)
+  msn_replace_allowed: true
   obj_id: 1724
   size: 1.57
   variationof: Pete TR
@@ -4169,14 +4169,14 @@ Pete TR:
     bossX: -272.6265869140625
     bossY: 0
     bossZ: 746.9041748046875
-  enabled: true
+  enabled: false
   aimods:
   - name: N_EX760_BTL/n_ex.bdscript
     type: obj
   pc: 
     source_replace_allowed: true # TODO supposedly demyx super crashes here on ps2 and most bosses cause crashes here
   source_replace_allowed: false
-  msn_replace_allowed: false # This is due soley to Pete OC II
+  msn_replace_allowed: true # This is due soley to Pete OC II
   hp: 100
   gimmick_source:
   - Hostile Program
@@ -4496,6 +4496,8 @@ Pete TR:
 Prison Keeper:
   blacklist_destination:
    - Final Xemnas
+  blacklist_source:
+   - Roxas
   roomData:
     bossX: 416.09521484375
     bossY: -204.1072998046875
@@ -4683,6 +4685,8 @@ Riku:
   - Storm Rider
   - Shadow Stalker
   - Marluxia 
+  - Sephiroth
+  - Roxas
   gimmick_source:
   - Hostile Program
   - Xemnas
@@ -4704,6 +4708,7 @@ Riku:
   variations:
     Riku:
       story_level: 35
+      msn: MU07_MS201
       vars:
       - 0
       - 0
@@ -4833,6 +4838,7 @@ Samurai:
   type: enemy
   tags:
   - nobody
+  - large
   variations:
     Samurai:
       vars:
@@ -5008,6 +5014,7 @@ Sephiroth:
   tags:
   - sephiroth
   - solo 
+  - needs_rc
   - no_roxas
   can_be_enemy: true
   enabled: true
@@ -5033,9 +5040,13 @@ Sephiroth:
   - Groundshaker
   - Oogie Boogie
   - Scar
+  - Hades II
   - The Beast
   - Final Xemnas
   - Hades II
+  - Cloud
+  - Riku
+  - Jafar
   variations:
     Sephiroth:
       vars:
@@ -5608,17 +5619,15 @@ Terra:
   type: boss
   blacklist_destination:
   - Hostile Program # Report of getting stuck in bike loop
-  - Armor Xemnas II
   - Axel I
-  - Cerberus
   - Groundshaker
   - Hades II
   - Jafar
   - Oogie Boogie
-  - Scar
   - The Beast
   - Twilight Thorn
   - Axel II
+  - Riku
   - Cloud
   variations:
     Terra:
@@ -5701,6 +5710,11 @@ The Experiment:
   blacklist_destination:
   - Pete OC II # takes too much time and memory?
   - Axel I # Proactive ban due to RC?
+  - Armored Xemnas II
+  - Scar
+  - Cloud
+  - Jafar
+  - Final Xemnas
   type: boss
   # these might need to be adds or something different
   # I'm also not including them in the size calculation, which might be wrong
@@ -5783,8 +5797,8 @@ Tifa:
   - Yuffie
   - Hercules
   limiter: 0
-  model: N_HB570_BTL2
-  msn_replace_allowed: false
+  model: N_HB570_BTL2Herc
+  msn_replace_allowed: true
   msn_source_as: "WI03_MS104"
   obj_id: 2298
   pc: 
@@ -5810,6 +5824,7 @@ Tifa:
       - 1
       - 0
     Tifa (1):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -5823,6 +5838,7 @@ Tifa:
       - 2
       - 0
     Tifa (2):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -5941,6 +5957,7 @@ Vexen:
   - Axel I
   - Hades II
   - Twilight Thorn
+  - Pete OC II
   enabled: true
   enmp_index: 0xC8
   hp: 100
@@ -6046,9 +6063,7 @@ Volcano Lord:
   - Sephiroth # Too hard in multi boss fights
   - Terra # Too hard in multi boss fights
   - Twilight Thorn
-  - Roxas # crashes a lot
   - Hydra
-  - Larxene
   - Marluxia
   - Cloud
   - Tifa
@@ -6059,6 +6074,7 @@ Volcano Lord:
   - Grim Reaper II
   - Shadow Stalker
   - Storm Rider
+  - Final Xemnas
   tags:
   - large
   type: boss
@@ -6074,6 +6090,7 @@ Volcano Lord:
       - 0
       - 0
     Volcano Lord (Cups):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -6121,6 +6138,8 @@ Xaldin:
   - Seifer
   - Twilight Thorn
   - Armor Xemnas II
+  - Cloud
+  - Jafar
   enmp_index: 0x57
   hp: 100
   level: 99
@@ -6208,6 +6227,9 @@ Xigbar:
   - Tifa
   - Cloud
   - Final Xemnas
+  - Hydra
+  - Hercules
+  - Cerberus
   enabled: true
   tags:
   - needs_rc
@@ -6268,7 +6290,7 @@ Yuffie:
   - Hercules
   limiter: 0
   model: N_HB580_BTL2
-  msn_replace_allowed: false
+  msn_replace_allowed: true
   obj_id: 2299
   pc: 
     tags: 
@@ -6293,6 +6315,7 @@ Yuffie:
       - 1
       - 0
     Yuffie (1):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -6306,6 +6329,7 @@ Yuffie:
       - 3
       - 0
     Yuffie (2):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -6318,6 +6342,7 @@ Yuffie:
       - 4
       - 0
     Yuffie (3):
+      enabled: false
       roomData:
         bossX: 0
         bossY: 0
@@ -6377,6 +6402,8 @@ Zexion:
   - Yuffie
   - Final Xemnas
   - Barbossa
+  - Cerberus
+  - Prison Keeper
   variations:
     Zexion:
       program: 151
