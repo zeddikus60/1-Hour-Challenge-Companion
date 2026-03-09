@@ -2472,6 +2472,9 @@ Final Xemnas:
   - Seifer
   - Twilight Thorn
   - Final Xemnas
+  - Final Xemnas (Data)
+  - Final Xemnas (Clone)
+  - Final Xemnas (Clone) (Data)
   can_be_enemy: false
   tags:
   - solo
@@ -3036,6 +3039,7 @@ Hercules:
   - Tifa
   - Yuffie
   - Hercules
+  - Hydra
   blacklist_source:
   - Jafar
   - Storm Rider
@@ -4145,7 +4149,7 @@ Pete OC II:
     bossX: 0
     bossY: 0
     bossZ: -400
-  enabled: false
+  enabled: true
   enmp_index: 0x1A
   hp: 100
   level: 99
@@ -4190,7 +4194,7 @@ Pete TR:
     bossX: -272.6265869140625
     bossY: 0
     bossZ: 746.9041748046875
-  enabled: false
+  enabled: true
   aimods:
   - name: N_EX760_BTL/n_ex.bdscript
     type: obj
@@ -6201,6 +6205,8 @@ Xemnas:
   - Riku
   - Twilight Thorn
   - Prison Keeper
+  - Jafar
+  - Cloud
   can_be_enemy: false
   enabled: true
   enmp_index: 90 #  Final Xemnas has same ENMP index so it's problematic to scale Xemnas
