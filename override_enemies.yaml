@@ -2464,6 +2464,9 @@ Final Xemnas:
   - Seifer
   - Twilight Thorn
   - Final Xemnas
+  - Final Xemnas (Data)
+  - Final Xemnas (Clone)
+  - Final Xemnas (Clone) (Data)
   can_be_enemy: false
   tags:
   - solo
@@ -3027,6 +3030,7 @@ Hercules:
   - Tifa
   - Yuffie
   - Hercules
+  - Hydra
   blacklist_source:
   - Jafar
   - Storm Rider
@@ -6160,6 +6164,8 @@ Xemnas:
   - Riku
   - Twilight Thorn
   - Prison Keeper
+  - Jafar
+  - Cloud
   can_be_enemy: false
   enabled: true
   enmp_index: 90 #  Final Xemnas has same ENMP index so it's problematic to scale Xemnas
