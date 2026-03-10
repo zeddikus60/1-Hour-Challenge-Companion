@@ -11964,9 +11964,11 @@ Olympus Coliseum:
         sp_ids:
           '392':
           - index: 0
+            ignored: true
             isboss: true
             name: Yuffie
           - index: 1
+            ignored: true
             isboss: true
             name: Leon
       b_a1:
@@ -12417,6 +12419,7 @@ Olympus Coliseum:
         sp_ids:
           '1343':
           - index: 0
+            ignored: true
             isboss: true
             name: Hercules
       b_c1:
@@ -12797,9 +12800,11 @@ Olympus Coliseum:
         sp_ids:
           '1850':
           - index: 0
+            ignored: true
             isboss: true
             name: Tifa
           - index: 1
+            ignored: true
             isboss: true
             name: Yuffie (1)
       b_h1:
@@ -13347,9 +13352,11 @@ Olympus Coliseum:
         sp_ids:
           '2948':
           - index: 0
+            ignored: true
             isboss: true
             name: Tifa (1)
           - index: 1
+            ignored: true
             isboss: true
             name: Cloud
       b_j6:
@@ -13472,9 +13479,11 @@ Olympus Coliseum:
         sp_ids:
           '4753':
           - index: 0
+            ignored: true
             isboss: true
             name: Leon (1)
           - index: 1
+            ignored: true
             isboss: true
             name: Cloud (1)
       b_k1:
@@ -13819,15 +13828,19 @@ Olympus Coliseum:
         sp_ids:
           '5073':
           - index: 0
+            ignored: true
             isboss: true
             name: Tifa (2)
           - index: 1
+            ignored: true
             isboss: true
             name: Cloud (2)
           - index: 2
+            ignored: true
             isboss: true
             name: Yuffie (2)
           - index: 3
+            ignored: true
             isboss: true
             name: Leon (2)
       b_r0:
@@ -13835,9 +13848,11 @@ Olympus Coliseum:
         sp_ids:
           '5137':
           - index: 0
+            ignored: true
             isboss: true
             name: Yuffie (3)
           - index: 1
+            ignored: true
             isboss: true
             name: Leon (3)
   'Underworld Caverns: Atrium':
