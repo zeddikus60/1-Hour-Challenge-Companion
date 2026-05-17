@@ -3474,6 +3474,7 @@ Larxene:
   - no_roxas
   blacklist_destination:
   - Barbossa
+  - Grim Reaper II
   - Scar
   - Riku
   - Cerberus
@@ -5715,6 +5716,7 @@ The Experiment:
     type: obj
   - name: B_NM110_R_ARM/b_nm.bdscript
     type: obj
+  msn_dest_as: "WI03_MS104"
   roomData:
     bossX: -810.4044189453125
     bossY: 4.720623016357422
