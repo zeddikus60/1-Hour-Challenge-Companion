@@ -3476,6 +3476,7 @@ Larxene:
   blacklist_destination:
   - Barbossa
   - Grim Reaper II
+  - Leon
   - Scar
   - Riku
   - Cerberus
@@ -3659,6 +3660,7 @@ Lexaeus:
   - Scar
   - Thresholder
   - Cloud
+  - Barbossa
   variations:
     Lexaeus:
       vars:
